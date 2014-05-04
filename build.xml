@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="DreamSense" basedir="." default="use">
+
+  <property environment="env"/>
+  <property name="io.dir" value="io"/>
+
+  <property name="src.dir" value="src"/>
+  <property name="classes.dir" value="classes"/>
+
+  <target name="clean" description="Delete all generated files">
+    <delete dir="${classes.dir}"/>
+    <delete file="${ant.project.name}.jar"/>
+  </target>
+
+  <target name="compile" description="Compiles the Task">
+    <mkdir dir="${classes.dir}"/>
+    <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="true"/>
+  </target>
+
+  <target name="jar" description="JARs the Task" depends="compile">
+    <jar destfile="${ant.project.name}.jar" basedir="${classes.dir}"/>
+  </target>
+
+  <target name="uuid" description="Use the Task" depends="jar">
+    <taskdef name="uuid" classname="com.dreamsense.tasks.Uuid" classpath="${ant.project.name}.jar"/>
+    <uuid property="uuid"/>
+    <echo>${uuid}</echo>
+  </target>
+</project>
