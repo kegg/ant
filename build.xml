@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="DreamSense" basedir="." default="use">
+<project name="DreamSense" basedir="." default="clean">
 
   <property environment="env"/>
   <property name="io.dir" value="io"/>
