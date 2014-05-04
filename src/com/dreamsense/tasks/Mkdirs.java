@@ -52,6 +52,7 @@ public class Mkdirs extends Task {
       while ((line = br.readLine()) != null) {
         file = new File(line);
         file.mkdirs();
+        log("Created dir: " + file.getAbsolutePath());
       }      
     } catch (FileNotFoundException fnfe) {
       fnfe.printStackTrace();
@@ -80,6 +81,7 @@ public class Mkdirs extends Task {
       for (String dir : getDirs().split(getDelimiter())) {
         file = new File(dir);
         file.mkdirs();
+        log("Created dir: " + file.getAbsolutePath());
       }
     }
   }
