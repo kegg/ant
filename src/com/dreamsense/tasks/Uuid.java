@@ -8,6 +8,7 @@ import java.util.UUID;
 
 /**
   * Generates a unique id and stores it in the specified property.
+  * @author Kyle Eggleston  
   */
 
 public class Uuid extends Task {
