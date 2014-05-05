@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="DreamSense" basedir="." default="clean">
 
-  <property environment="env"/>
-  <property name="io.dir" value="io"/>
-
   <property name="src.dir" value="src"/>
   <property name="doc.dir" value="javadoc"/>  
   <property name="classes.dir" value="classes"/>
