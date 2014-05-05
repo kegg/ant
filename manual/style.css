@@ -1,0 +1,42 @@
+h2 {
+  background-color:#AEC6CF;
+}
+
+pre {
+  background-color:#f0f0f0;
+}
+
+table {
+  color:#333333;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+}
+table th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;
+}
+
+table td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff;
+}
+
+ul.toc {
+  list-style: none;
+  padding:0px;
+}
+
+.center {
+  text-align:center;
+}
+
+.left {
+  text-align:left;
+}

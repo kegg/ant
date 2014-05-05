@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Mkdirs Task</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+  <h1><a name="mkdirs" id="mkdirs">Mkdirs</a></h1>
+
+  <h2>Description</h2>
+
+  <p>Creates a directory structure based off of entries in a file or a <code>String</code> of filenames. Also non-existent parent directories are created, when necessary. Does nothing if the directory already exist.</p>
+
+  <h2>Parameters</h2>
+
+  <table>
+    <thead>
+    <tr>
+      <th class="left">Attribute</th>
+      <th class="left">Description</th>
+      <th class="center">Required</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>file</td>
+        <td>The filename of the file that contains the directory structure.</td>
+        <td class="center">No</td>
+      </tr>
+      <tr>
+        <td>dirs</td>
+        <td>A delimiter separated string containing the directory structure.</td>
+        <td class="center">No</td>
+      </tr>
+      <tr>
+        <td>delimiter</td>
+        <td>The delimiter used in the dirs attribute.</td>
+        <td class="center">No, defaults to ","</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Examples</h2>
+
+  <pre>&lt;mkdirs file="dirs.txt"/&gt;</pre>
+
+  <p>Creates a directory structure from the entries in the file dirs.txt.</p>
+
+  <pre>&lt;mkdirs dirs="io/one,io/two"/&gt;</pre>
+
+  <p>Creates a directory structure from the list in the dirs attribute.</p>
+
+  <pre>&lt;mkdirs dirs="io/one|io/two" delimiter="\|"/&gt;</pre>
+
+  <p>Creates a directory structure from the list in the dirs attribute, using a | as a delimiter between the entries.</p>
+</body>
+</html>
