@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<antlib>
+  <typedef name="mkdirs" classname="com.dreamsense.tasks.Mkdirs"/>  
+  <typedef name="uuid" classname="com.dreamsense.tasks.Uuid"/>
+</antlib>

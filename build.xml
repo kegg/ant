@@ -14,6 +14,7 @@
   <target name="compile" description="Compiles the Task">
     <mkdir dir="${classes.dir}"/>
     <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="true"/>
+    <copy file="${src.dir}/com/dreamsense/tasks/antlib.xml" tofile="${classes.dir}/com/dreamsense/tasks/antlib.xml"/>
   </target>
 
   <target name="jar" description="JARs the Task" depends="compile">
