@@ -5,10 +5,12 @@
   <property name="io.dir" value="io"/>
 
   <property name="src.dir" value="src"/>
+  <property name="doc.dir" value="javadoc"/>  
   <property name="classes.dir" value="classes"/>
 
   <target name="clean" description="Delete all generated files">
     <delete dir="${classes.dir}"/>
+    <delete dir="${doc.dir}"/>
     <delete file="${ant.project.name}.jar"/>
   </target>
 
@@ -31,4 +33,8 @@
     <taskdef name="mkdirs" classname="com.dreamsense.tasks.Mkdirs" classpath="${ant.project.name}.jar"/>
     <mkdirs dirs="io/1,io/2"/>
   </target>
+
+  <target name="doc">
+    <javadoc sourcepath="${src.dir}" destdir="${doc.dir}"/>
+  </target>  
 </project>
