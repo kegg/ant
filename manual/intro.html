@@ -9,5 +9,15 @@
 
   <p>In order to use these tasks, you have to define them using the <code>taskdef</code> Ant Task. For instructions on how to use taskdef, click <a href="http://ant.apache.org/manual/Tasks/taskdef.html" target="_blank">here</a>.</p>
 
+  <p>Alternatively, you can also use a main <code>taskdef</code> to define the tasks like this:</p>
+
+  <pre>
+    &lt;taskdef resource="com/dreamsense/tasks/antlib.xml"&gt;
+      &lt;classpath&gt;
+        &lt;pathelement location="DreamSense.jar"/&gt;
+      &lt;/classpath&gt;
+    &lt;/taskdef&gt;    
+  </pre>
+
 </body>
 </html>
