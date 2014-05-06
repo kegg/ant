@@ -98,6 +98,7 @@ public class RandomText extends Task {
   /**
     * Get the desired number of paragraphs.
     * @param numOfParagraphs The number of paragraphs wanted returned.
+    * @param text The specified text from the resources.randomText package
     * @return the requested number of paragraphs in a String.
     */
   public String getText(int numOfParagraphs, String[] text) {
