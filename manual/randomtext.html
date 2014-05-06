@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>RandomText Task</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+  <h1><a name="mkdirs" id="mkdirs">RandomText</a></h1>
+
+  <h2>Description</h2>
+
+  <p>Generates random text and stores it in the specified property.</p>
+
+  <h2>Parameters</h2>
+
+  <table>
+    <thead>
+    <tr>
+      <th class="left">Attribute</th>
+      <th class="left">Description</th>
+      <th class="center">Required</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr valign="top">
+        <td>format</td>
+        <td>
+          Format of the output. Valid values are:
+          <ul>
+            <li>plain</li>
+            <li>html</li>
+          </ul>
+        </td>
+        <td class="center">No, defaults to <code>plain</code></td>
+      </tr>
+      <tr valign="top">
+        <td>method</td>
+        <td>
+          What kind of text to use. Valid values are:
+          <ul>
+            <li>loremipsum</li>
+            <li>bible</li>
+          </ul>
+        </td>
+        <td class="center">No, defaults to <code>loremipsum</code></td>
+      </tr>
+      <tr valign="top">
+        <td>property</td>
+        <td>The name of the <code>property</code> the text will be stored as.</td>
+        <td class="center">Yes</td>
+      </tr>
+      <tr valign="top">
+        <td>paragraphs</td>
+        <td>The number of <code>paragraphs</code> of text to generate. <em>Note: Limit is 49.</em></td>
+        <td class="center">No, default is 5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Examples</h2>
+
+  <pre>&lt;randomtext property="li"/&gt;</pre>
+
+  <p>Generates 5 paragraphs of loremipsum text and stores it in the property li.</p>
+
+  <pre>&lt;randomtext property="li" format="html" method="bible" paragraphs="20"/&gt;</pre>
+
+  <p>Generates 20 paragraphs of bibleipsum text and stores it in the property li as html output.</p>
+</body>
+</html>
