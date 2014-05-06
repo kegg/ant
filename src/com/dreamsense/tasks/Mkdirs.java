@@ -13,7 +13,7 @@ import java.io.IOException;
   * Creates a directory structure based off of entries in a file or a String of filenames. 
   * Also non-existent parent directories are created, when necessary. Does nothing if the 
   * directory already exist.
-  * @author Kyle Eggleston  
+  * @author Kyle Eggleston
   */
 
 public class Mkdirs extends Task {

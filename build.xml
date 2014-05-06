@@ -32,6 +32,12 @@
     <mkdirs dirs="io/1,io/2"/>
   </target>
 
+  <target name="randomtext" description="Use the RandomText Task" depends="jar">
+    <taskdef name="mkdirs" classname="com.dreamsense.tasks.RandomText" classpath="${ant.project.name}.jar"/>
+    <randomtext property="li" method="loremipsum"/>
+    <echo>${li}</echo>
+  </target>
+
   <target name="doc">
     <javadoc sourcepath="${src.dir}" destdir="${doc.dir}"/>
   </target>  
