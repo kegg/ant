@@ -33,7 +33,7 @@
   </target>
 
   <target name="randomtext" description="Use the RandomText Task" depends="jar">
-    <taskdef name="mkdirs" classname="com.dreamsense.tasks.RandomText" classpath="${ant.project.name}.jar"/>
+    <taskdef name="randomtext" classname="com.dreamsense.tasks.RandomText" classpath="${ant.project.name}.jar"/>
     <randomtext property="li" method="loremipsum"/>
     <echo>${li}</echo>
   </target>
